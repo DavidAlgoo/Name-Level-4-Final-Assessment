@@ -11,6 +11,7 @@ i2c = I2C(0, scl=Pin(1), sda=Pin(0), freq=400000)
 lcd = I2cLcd(i2c, 0x27, 2, 16)
 
 # Create an ADC (Analog-to-Digital Converter) object on pin GP26
+adc = ADC(Pin(26))
 
 # Define reference voltage (VREF) and ADC resolution.
 VREF = 3.3
